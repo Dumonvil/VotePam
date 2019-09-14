@@ -27,7 +27,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Antre id ou" />
+            android:hint="Antre non ou" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -37,12 +37,12 @@
         android:layout_marginRight="16dp"
         android:layout_marginLeft="16dp"
         android:layout_below="@+id/tI_id"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="4dp"
         >
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Antre non ou" />
+            android:hint="Antre id ou" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
