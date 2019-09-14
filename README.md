@@ -64,17 +64,18 @@ features.
 <img src="https://github.com/Dumonvil/VotePam/blob/master/wireframe.jpg" width=800><br>
 
 ### [BONUS] Digital Wireframes & Mockups
-<span> <img src="https://imgur.com/jJN0wDP.jpg" width=100>
-<img src="https://imgur.com/lgFd2MA.png" width=100>
-<img src="https://imgur.com/RZamRId.png" width=100>
-<img src="https://imgur.com/TwKz7sX.png" width=100>
-<img src="https://imgur.com/lEg4u54.png" width=100>
-<img src="https://imgur.com/khwck6F.png" width=100>
-<img src="https://imgur.com/U2Botdk.png" width=100>
-<img src ="https://imgur.com/BYZ7uI3.png" width=100>
-<img src="https://imgur.com/4R1fmIv.png" width=100>
-<img src="https://imgur.com/w8QJf6g.png" width=100>
-<img src="https://imgur.com/qjTYATV.png" width=100>
+<span> <img src="https://imgur.com/ilMaSTH.png" width=100>
+<img src="https://imgur.com/qZvpYA4.png" width=100>
+<img src="https://imgur.com/KtbDhEI.png" width=100>
+<img src="https://imgur.com/Ls25NxQ.png" width=100>
+<img src="https://imgur.com/15o3HGG.png" width=100>
+<img src="https://imgur.com/ONnY0NP.png" width=100>
+<img src="https://imgur.com/93Lrz8W.png" width=100>
+<img src ="https://imgur.com/dVv2Rzt.png" width=100>
+<img src="https://imgur.com/aXAYwe9.png" width=100>
+<img src="https://imgur.com/rUAz0n6.png" width=100>
+<img src="https://imgur.com/aE8u6NF.png" width=100>
+<img src="https://imgur.com/lFRrlVX.png" width=100>
 </span>
 
 ### [BONUS] Interactive Prototype
