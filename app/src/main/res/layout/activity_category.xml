@@ -117,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:text="Prezidan"
                 android:layout_centerInParent="true"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:textColor="@android:color/white"/>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
@@ -139,7 +139,7 @@
                 android:layout_height="wrap_content"
                 android:text="Senatè"
                 android:layout_centerInParent="true"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:textColor="@android:color/white"/>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
@@ -161,7 +161,7 @@
                 android:layout_height="wrap_content"
                 android:text="Depite"
                 android:layout_centerInParent="true"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:textColor="@android:color/white"/>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
