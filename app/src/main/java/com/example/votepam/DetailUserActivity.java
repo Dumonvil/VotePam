@@ -10,9 +10,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.votepam.Models.UserModel;
-import com.parse.ParseUser;
-
 public class DetailUserActivity extends AppCompatActivity {
     Toolbar toolbar;
     Button btnVote;
@@ -52,7 +49,7 @@ public class DetailUserActivity extends AppCompatActivity {
                 finish();
             }
         });
-       
+
 
 
 
