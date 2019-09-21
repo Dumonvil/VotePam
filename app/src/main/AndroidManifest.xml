@@ -7,25 +7,34 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
+        android:name=".ParseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_round"
         android:label="@string/app_name"
-        android:name=".ParseApplication"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CategoryActivity" android:theme="@style/AppTheme.noActionbar"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".DetailUserActivity" android:theme="@style/AppTheme.noActionbar"
-            android:screenOrientation="portrait"/>
+        <activity android:name=".ShowDepActivity" android:theme="@style/AppTheme.noActionbar"></activity>
+        <activity android:name=".ShowSenActivity" android:theme="@style/AppTheme.noActionbar"/>
+        <activity
+            android:name=".ShowPresActivity"
+            android:theme="@style/AppTheme.noActionbar" />
+        <activity
+            android:name=".CategoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.noActionbar" />
+        <activity
+            android:name=".DetailUserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.noActionbar" />
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/AppTheme.noActionbar"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.noActionbar" />
         <activity
             android:name=".SplashActivity"
-            android:theme="@style/AppTheme.noActionbar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.noActionbar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

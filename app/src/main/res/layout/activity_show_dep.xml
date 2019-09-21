@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CategoryActivity">
+    tools:context=".ShowDepActivity">
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
@@ -76,101 +77,28 @@
             </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
-
     <TextView
-        android:id="@+id/text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kategori"
-        android:textSize="30sp"
-        android:textColor="@android:color/black"
+        android:id="@+id/tvpres"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
         android:layout_below="@+id/appbar"
-        android:layout_marginTop="10dp"
+        android:text="Depite"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:background="@color/colorcard"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
 
         />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/president"
-        android:layout_width="150dp"
-        android:layout_height="90dp"
-        app:cardBackgroundColor="@color/colorPrimary"
-        app:cardCornerRadius="8dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/text1"
-        android:layout_marginTop="20dp">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Prezidan"
-                android:layout_centerInParent="true"
-                android:textSize="20sp"
-                android:textColor="@android:color/white"/>
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_pres"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvpres"/>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/senator"
-        android:layout_width="150dp"
-        android:layout_height="90dp"
-        app:cardBackgroundColor="@color/colorPrimary"
-        app:cardCornerRadius="8dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/president"
-        android:layout_marginTop="20dp">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Senatè"
-                android:layout_centerInParent="true"
-                android:textSize="20sp"
-                android:textColor="@android:color/white"/>
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/depite"
-        android:layout_width="150dp"
-        android:layout_height="90dp"
-        app:cardBackgroundColor="@color/colorPrimary"
-        app:cardCornerRadius="8dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/senator"
-        android:layout_marginTop="20dp">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Depite"
-                android:layout_centerInParent="true"
-                android:textSize="20sp"
-                android:textColor="@android:color/white"/>
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
-
-
-    <Button
-        android:id="@+id/btnview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Wè kandida ou fin vote yo"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/depite"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:background="@drawable/custom_button_connect"
-        android:layout_marginTop="30dp"/>
 
 
 </RelativeLayout>
