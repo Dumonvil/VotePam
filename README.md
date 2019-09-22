@@ -32,7 +32,7 @@ features.
 
 **Optional Nice-to-have Stories**
 
-- [ ] Users can search each candidate either president, senator or deputy
+- [ ] Users can search each candidate either president, senator or Member of Parliament
 - [ ] User can log out
 
 ### 2. Screen Archetypes
