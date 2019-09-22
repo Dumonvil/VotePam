@@ -58,7 +58,7 @@ public class DetailUserActivity extends AppCompatActivity {
         tfirstname.setText(user.getString("firstname"));
         tname.setText(user.getString("name"));
         tlieu.setText(user.getString("birthplace"));
-        //tdate.setText((CharSequence) user.getDate("birthdate"));
+        tdate.setText(user.getString("birthdate"));
 
         btnVote.setOnClickListener(new View.OnClickListener() {
             @Override
