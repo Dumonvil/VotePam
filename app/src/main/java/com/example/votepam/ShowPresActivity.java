@@ -28,9 +28,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ShowPresActivity extends AppCompatActivity {
+    private final String TAG = "ShowDepActivity";
     Toolbar toolbar;
     TextView tfirstname,tname;
     ImageView ivuser1,ivBack;
+    RecyclerView recyclerView;
+    List<PresModel> presModels;
+    PresAdapter presAdapter;
 
 
 
@@ -42,7 +46,11 @@ public class ShowPresActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
+        recyclerView = findViewById(R.id.rv_pres);
+        presModels = new ArrayList<>();
+        presAdapter = new PresAdapter(this,presModels);
+        recyclerView.setLayoutManager( new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false));
+        recyclerView.setAdapter(presAdapter);
 
         ivuser1 = findViewById(R.id.ivuser);
         ivBack = findViewById(R.id.ivback);
@@ -71,7 +79,28 @@ public class ShowPresActivity extends AppCompatActivity {
                 finish();
             }
         });
+        showList();
 
+    }
+
+    private void showList() {
+        ParseQuery<PresModel> parseQuery = new ParseQuery<PresModel>(PresModel.class);
+        parseQuery.findInBackground(new FindCallback<PresModel>() {
+            @Override
+            public void done(List<PresModel> objects, ParseException e) {
+                if (e!= null){
+                    Log.e(TAG,"Error with query");
+                    e.printStackTrace();
+                    return;
+                }
+                presModels.addAll(objects);
+                presAdapter.notifyDataSetChanged();
+                for (int i = 0; i < objects.size(); i++){
+                    PresModel presModel = objects.get(i);
+                    Log.d(TAG,"Post: " + presModel.getFirstname() + "username: " +presModel.getName());
+                }
+            }
+        });
     }
 
 
