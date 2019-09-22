@@ -84,7 +84,7 @@
         android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        app:cardBackgroundColor="@color/colorcard"
+        app:cardBackgroundColor="@color/color1"
         app:cardCornerRadius="8dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/appbar"
