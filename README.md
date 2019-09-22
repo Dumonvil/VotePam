@@ -100,7 +100,7 @@ Model: User
 | CreatedAt | Datetime | Date created user (default field)     |
 | UpdateAt  | Datetime | Date last updated user (default field)|
 | Birthplace | String  | The place where the User was born                 |
-| Birth Date| Date | The date that the User was born        |
+| Birth Date| String | The date that the User was born        |
 
 
 Model: President
@@ -116,7 +116,7 @@ Model: President
 | Politic part |String    | Common political ideas united in association              |
 | Candidate number  | Number |Number of president	       |
 | Birthplace | String  | The place where the President was born                   |
-| Birth Date | Date | The date that the President was born        |
+| Birth Date | String | The date that the President was born        |
 | Mission   | String   | Mission of the President		       |
  
 
@@ -132,8 +132,8 @@ Model: Senator
 | Birthplace | String  | The place where the Senator was born                   |
 | CreatedAt | Datetime | Date created Senator (default field)     |
 | UpdateAt  | Datetime | Date last updated Senator (default field)|
-| Birth Date | Date | The date that the Senator was born        |
-| Candidate number   | Number |Number of Senator	       |
+| Birth Date | String | The date that the Senator was born        |
+| Candidate | number | Number |Number of Senator	       |
 | Mission   | String   | Mission of the Senator		       |
 
 Model: Member of parliament
@@ -147,9 +147,9 @@ Model: Member of parliament
 | CreatedAt | Datetime | Date created member of parliament (default field)     |
 | UpdateAt  | Datetime | Date last updated member of parliament (default field)|
 | Birthplace | String  | The place where the member of parliament was born                |
-| Birth Date | Date | The date that the member of parliament was born        |
+| Birth Date | String | The date that the member of parliament was born        |
 | Politic part |String    | Common political ideas united in association               |
-| Candidate number    | Number |Politic's number of member of parliament	       |
+| Candidate | number    | Number |Politic's number of member of parliament	       |
 | Mission   | String   | Mission of the member of parliament	       |
 
 
