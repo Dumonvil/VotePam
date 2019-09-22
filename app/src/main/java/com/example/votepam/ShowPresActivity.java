@@ -2,23 +2,38 @@ package com.example.votepam;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.votepam.Models.PresModel;
+import com.example.votepam.Models.SenModel;
+import com.example.votepam.adapters.PresAdapter;
+import com.example.votepam.adapters.SenatorAdapter;
+import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseFile;
+import com.parse.ParseQuery;
 import com.parse.ParseUser;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ShowPresActivity extends AppCompatActivity {
+    private final String TAG = "ShowPresActivity";
     Toolbar toolbar;
     TextView tfirstname,tname;
     ImageView ivuser1,ivBack;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +42,8 @@ public class ShowPresActivity extends AppCompatActivity {
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
 
         ivuser1 = findViewById(R.id.ivuser);
         ivBack = findViewById(R.id.ivback);
@@ -55,5 +72,8 @@ public class ShowPresActivity extends AppCompatActivity {
                 finish();
             }
         });
+       
     }
+
+
 }

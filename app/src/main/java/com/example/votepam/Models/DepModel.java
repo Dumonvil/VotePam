@@ -5,7 +5,7 @@ import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 
-@ParseClassName("DepModel")
+@ParseClassName("MemberofParl1")
 public class DepModel extends ParseObject {
     public static final String KEY_FIRSTNAME = "firstname";
     public static final String KEY_NAME = "name";

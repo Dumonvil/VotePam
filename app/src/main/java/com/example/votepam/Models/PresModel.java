@@ -5,12 +5,11 @@ import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 
-@ParseClassName("PresModel")
+@ParseClassName("President1")
 public class PresModel extends ParseObject {
     public static final String KEY_FIRSTNAME = "firstname";
     public static final String KEY_NAME = "name";
     public static final String KEY_IMAGE = "profileImage";
-    public static final String KEY_USER = "user";
     public static final String KEY_ID = "password";
     public static final String KEY_BIRTHPLACE = "birthplace";
     public static final String KEY_BIRTHDATE = "birthdate";
@@ -64,11 +63,4 @@ public class PresModel extends ParseObject {
         put(KEY_IMAGE,parseFile);
     }
 
-    public ParseUser getUser(){
-        return getParseUser(KEY_USER);
-    }
-
-    public void setUser(ParseUser parseUser){
-        put(KEY_USER,parseUser);
-    }
 }

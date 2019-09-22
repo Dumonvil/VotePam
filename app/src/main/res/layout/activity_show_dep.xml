@@ -83,7 +83,7 @@
         android:layout_height="30dp"
         android:layout_below="@+id/appbar"
         android:text="Depite"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:gravity="center"
         android:textColor="@android:color/black"
         android:background="@color/colorcard"
@@ -94,7 +94,7 @@
         />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_pres"
+        android:id="@+id/rv_dep"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/tvpres"/>
