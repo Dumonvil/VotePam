@@ -32,8 +32,8 @@ features.
 
 **Optional Nice-to-have Stories**
 
-* Users can search each candidate either president, senator or deputy
-* User can log out
+- [ ] Users can search each candidate either president, senator or deputy
+- [ ] User can log out
 
 ### 2. Screen Archetypes
 
