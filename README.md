@@ -114,7 +114,7 @@ Model: President
 | UpdateAt  | Datetime | Date last updated user (default field)|
 | ProfileImage| File     | Profile of the user                   |
 | Politic part |String    | Common political ideas united in association              |
-| Candidate number  | Number |Number of president	       |
+| Candidate Number  | Number |Number of president	       |
 | Birthplace | String  | The place where the President was born                   |
 | Birth Date | String | The date that the President was born        |
 | Mission   | String   | Mission of the President		       |
@@ -133,7 +133,7 @@ Model: Senator
 | CreatedAt | Datetime | Date created Senator (default field)     |
 | UpdateAt  | Datetime | Date last updated Senator (default field)|
 | Birth Date | String | The date that the Senator was born        |
-| Candidate | number | Number |Number of Senator	       |
+| Candidate Number | Number |Number of Senator	       |
 | Mission   | String   | Mission of the Senator		       |
 
 Model: Member of parliament
@@ -149,7 +149,7 @@ Model: Member of parliament
 | Birthplace | String  | The place where the member of parliament was born                |
 | Birth Date | String | The date that the member of parliament was born        |
 | Politic part |String    | Common political ideas united in association               |
-| Candidate | number    | Number |Politic's number of member of parliament	       |
+| Candidate Number | Number |Politic's number of member of parliament	       |
 | Mission   | String   | Mission of the member of parliament	       |
 
 
