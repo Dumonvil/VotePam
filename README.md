@@ -38,7 +38,7 @@ features.
 ### 2. Screen Archetypes
 
 * Login
-   * User can login with id
+   * User can login with id and firstname
 * Profile Screen 
    * Users can view all information about it when logged in
 * Candidate Selection Screen
