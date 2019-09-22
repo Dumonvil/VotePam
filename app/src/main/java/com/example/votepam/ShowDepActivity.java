@@ -31,6 +31,10 @@ public class ShowDepActivity extends AppCompatActivity {
     Toolbar toolbar;
     TextView tfirstname,tname;
     ImageView ivuser1,ivBack;
+    RecyclerView recyclerView;
+    DepAdapter depAdapter;
+    List<DepModel> depModels;
+
 
 
     @Override
@@ -41,6 +45,11 @@ public class ShowDepActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        recyclerView = findViewById(R.id.rv_dep);
+        depModels = new ArrayList<>();
+        depAdapter = new DepAdapter(this,depModels);
+        recyclerView.setLayoutManager( new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false));
+        recyclerView.setAdapter(depAdapter);
 
         ivuser1 = findViewById(R.id.ivuser);
         ivBack = findViewById(R.id.ivback);
@@ -69,8 +78,27 @@ public class ShowDepActivity extends AppCompatActivity {
                 finish();
             }
         });
+        showList();
 
     }
-
+    private void showList() {
+        ParseQuery<DepModel> parseQuery = new ParseQuery<DepModel>(DepModel.class);
+        parseQuery.findInBackground(new FindCallback<DepModel>() {
+            @Override
+            public void done(List<DepModel> objects, ParseException e) {
+                if (e!= null){
+                    Log.e(TAG,"Error with query");
+                    e.printStackTrace();
+                    return;
+                }
+                depModels.addAll(objects);
+                depAdapter.notifyDataSetChanged();
+                for (int i = 0; i < objects.size(); i++){
+                    DepModel depModel = objects.get(i);
+                    Log.d(TAG,"Post: " + depModel.getFirstname() + "username: " +depModel.getName());
+                }
+            }
+        });
+    }
 
 }
