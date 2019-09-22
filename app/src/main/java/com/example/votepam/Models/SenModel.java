@@ -5,7 +5,7 @@ import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 
-@ParseClassName("SenModel")
+@ParseClassName("Senator1")
 public class SenModel extends ParseObject {
     public static final String KEY_FIRSTNAME = "firstname";
     public static final String KEY_NAME = "name";
@@ -64,11 +64,4 @@ public class SenModel extends ParseObject {
         put(KEY_IMAGE,parseFile);
     }
 
-    public ParseUser getUser(){
-        return getParseUser(KEY_USER);
-    }
-
-    public void setUser(ParseUser parseUser){
-        put(KEY_USER,parseUser);
-    }
 }
