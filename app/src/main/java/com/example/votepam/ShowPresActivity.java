@@ -28,7 +28,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ShowPresActivity extends AppCompatActivity {
-    private final String TAG = "ShowPresActivity";
     Toolbar toolbar;
     TextView tfirstname,tname;
     ImageView ivuser1,ivBack;
@@ -72,7 +71,7 @@ public class ShowPresActivity extends AppCompatActivity {
                 finish();
             }
         });
-       
+
     }
 
 
