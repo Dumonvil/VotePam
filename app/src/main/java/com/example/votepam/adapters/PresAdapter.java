@@ -1,18 +1,23 @@
 package com.example.votepam.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.votepam.DetailPresActivity;
 import com.example.votepam.Models.PresModel;
 import com.example.votepam.R;
 import com.parse.ParseFile;
+
+import org.parceler.Parcels;
 
 import java.util.List;
 
@@ -49,20 +54,30 @@ public class PresAdapter extends RecyclerView.Adapter<PresAdapter.ViewHolder> {
     class ViewHolder extends RecyclerView.ViewHolder{
         TextView Name,Firstname;
         CircleImageView img;
+        CardView cardView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             Name = itemView.findViewById(R.id.name);
             Firstname = itemView.findViewById(R.id.firstname);
             img = itemView.findViewById(R.id.profile_image);
+            cardView = itemView.findViewById(R.id.card);
         }
 
-        public void bind(PresModel presModel) {
+        public void bind(final PresModel presModel) {
             Name.setText(presModel.getName());
             Firstname.setText(presModel.getFirstname());
             ParseFile image = presModel.getImage();
             if(image != null){
                 Glide.with(context).load(image.getUrl()).into(img);
             }
+            cardView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(context, DetailPresActivity.class);
+                    intent.putExtra("data",presModel.getObjectId());
+                    context.startActivity(intent);
+                }
+            });
         }
     }
 }
