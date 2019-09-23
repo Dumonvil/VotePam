@@ -14,8 +14,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ShowDepActivity" android:theme="@style/AppTheme.noActionbar"></activity>
-        <activity android:name=".ShowSenActivity" android:theme="@style/AppTheme.noActionbar"/>
+        <activity android:name=".DetailPresActivity" android:theme="@style/AppTheme.noActionbar"></activity>
+        <activity
+            android:name=".ShowDepActivity"
+            android:theme="@style/AppTheme.noActionbar" />
+        <activity
+            android:name=".ShowSenActivity"
+            android:theme="@style/AppTheme.noActionbar" />
         <activity
             android:name=".ShowPresActivity"
             android:theme="@style/AppTheme.noActionbar" />

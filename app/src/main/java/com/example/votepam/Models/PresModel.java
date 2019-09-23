@@ -3,9 +3,11 @@ package com.example.votepam.Models;
 import com.parse.ParseClassName;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
-import com.parse.ParseUser;
+
+import org.parceler.Parcel;
 
 @ParseClassName("President1")
+
 public class PresModel extends ParseObject {
     public static final String KEY_FIRSTNAME = "firstname";
     public static final String KEY_NAME = "name";
@@ -13,7 +15,11 @@ public class PresModel extends ParseObject {
     public static final String KEY_ID = "password";
     public static final String KEY_BIRTHPLACE = "birthplace";
     public static final String KEY_BIRTHDATE = "birthdate";
+    public static final String KEY_NUMBER = "candidatenumber";
+    public static final String KEY_PART = "politicpart";
 
+    public PresModel()  {
+    }
 
     public  String getFirstname() {
         return getString(KEY_FIRSTNAME);
@@ -37,6 +43,22 @@ public class PresModel extends ParseObject {
 
     public void  setKey(String value) {
         put(KEY_ID,value);
+    }
+
+    public  String getCandidateNumber() {
+        return getString(KEY_NUMBER);
+    }
+
+    public void  setCandidateNumber(String value) {
+        put(KEY_NUMBER,value);
+    }
+
+    public  String getPart() {
+        return getString(KEY_PART);
+    }
+
+    public void  setPart(String value) {
+        put(KEY_PART,value);
     }
 
     public  String getBirhplace() {
