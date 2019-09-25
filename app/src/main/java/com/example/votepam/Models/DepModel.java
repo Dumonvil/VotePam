@@ -14,6 +14,8 @@ public class DepModel extends ParseObject {
     public static final String KEY_ID = "password";
     public static final String KEY_BIRTHPLACE = "birthplace";
     public static final String KEY_BIRTHDATE = "birthdate";
+    public static final String KEY_NUMBER = "candidatenumber";
+    public static final String KEY_PART = "politicpart";
 
 
     public  String getFirstname() {
@@ -54,6 +56,22 @@ public class DepModel extends ParseObject {
 
     public void  setBirthdate(String value) {
         put(KEY_BIRTHDATE,value);
+    }
+
+    public  String getCandidateNumber() {
+        return getString(KEY_NUMBER);
+    }
+
+    public void  setCandidateNumber(String value) {
+        put(KEY_NUMBER,value);
+    }
+
+    public  String getPart() {
+        return getString(KEY_PART);
+    }
+
+    public void  setPart(String value) {
+        put(KEY_PART,value);
     }
 
     public ParseFile getImage(){

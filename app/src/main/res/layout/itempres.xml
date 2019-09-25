@@ -19,7 +19,7 @@
             android:layout_alignParentLeft="true"
             android:paddingLeft="20dp"
             android:paddingTop="6dp"
-            android:src="@drawable/votepam" />
+             />
 
         <LinearLayout
             android:id="@+id/Lglobal"

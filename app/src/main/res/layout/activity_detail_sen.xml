@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailPresActivity">
+    tools:context=".DetailSenActivity">
 
     <ImageView
         android:id="@+id/ivback"
@@ -116,5 +116,6 @@
         android:paddingRight="30dp"
         android:background="@drawable/custom_button_connect"
         android:layout_marginTop="40dp"/>
+
 
 </RelativeLayout>

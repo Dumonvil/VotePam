@@ -103,7 +103,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="12dp"
-                android:src="@drawable/pres" />
+                 />
             <TextView
                 android:id="@+id/tnom"
                 android:layout_width="wrap_content"

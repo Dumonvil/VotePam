@@ -18,7 +18,7 @@ import com.parse.ParseFile;
 import com.parse.ParseUser;
 
 public class CategoryActivity extends AppCompatActivity {
-    CardView card1,card2,card3;
+    Button btn1, btn2, btn3;
     Toolbar toolbar;
     TextView tfirstname,tname;
     ImageView ivuser1,ivBack;
@@ -30,9 +30,9 @@ public class CategoryActivity extends AppCompatActivity {
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        card1 = findViewById(R.id.president);
-        card2 = findViewById(R.id.senator);
-        card3 = findViewById(R.id.depite);
+        btn1 = findViewById(R.id.president);
+        btn2 = findViewById(R.id.senator);
+        btn3 = findViewById(R.id.depite);
         ivuser1 = findViewById(R.id.ivuser);
         ivBack = findViewById(R.id.ivback);
         tname = findViewById(R.id.name);
@@ -62,7 +62,7 @@ public class CategoryActivity extends AppCompatActivity {
         });
 
 
-        card1.setOnClickListener(new View.OnClickListener() {
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CategoryActivity.this,ShowPresActivity.class);
@@ -71,7 +71,7 @@ public class CategoryActivity extends AppCompatActivity {
             }
         });
 
-        card2.setOnClickListener(new View.OnClickListener() {
+        btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CategoryActivity.this,ShowSenActivity.class);
@@ -80,7 +80,7 @@ public class CategoryActivity extends AppCompatActivity {
             }
         });
 
-        card3.setOnClickListener(new View.OnClickListener() {
+        btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CategoryActivity.this,ShowDepActivity.class);
