@@ -47,7 +47,7 @@ public class DetailUserActivity extends AppCompatActivity {
         ParseFile img = user.getParseFile("profileImage");
         if (img != null){
             Glide.with(this).load(img.getUrl()).into(ivuser1);
-            Glide.with(this).load(img.getUrl()).override(100,170).into(imageView);
+            Glide.with(this).load(img.getUrl()).override(500,700).into(imageView);
         }
 
         /*try {
