@@ -45,13 +45,18 @@ public class DetailUserActivity extends AppCompatActivity {
         ParseUser user = ParseUser.getCurrentUser();
 
         ParseFile img = user.getParseFile("profileImage");
-        try {
+        if (img != null){
+            Glide.with(this).load(img.getUrl()).into(ivuser1);
+            Glide.with(this).load(img.getUrl()).override(500,700).into(imageView);
+        }
+
+        /*try {
             Bitmap bitmap = BitmapFactory.decodeStream(img.getDataStream());
             ivuser1.setImageBitmap(bitmap);
             imageView.setImageBitmap(bitmap);
         } catch (ParseException e) {
             e.printStackTrace();
-        }
+        }*/
 
         tfirstname1.setText(user.getString("firstname"));
         tname1.setText(user.getString("name"));
