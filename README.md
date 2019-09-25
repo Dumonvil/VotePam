@@ -27,7 +27,7 @@ features.
 
 - [x] User can login with id and firstname
 - [ ] Used will be able to select a candidate he wants to vote
-- [ ] Users will be able to see all the information about it when logged in
+- [x] Users will be able to see all the information about it when logged in
 - [ ] Users will be able to see all the candidates it has voted for
 
 **Optional Nice-to-have Stories**
