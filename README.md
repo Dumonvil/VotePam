@@ -23,7 +23,7 @@ features.
 ## Product Spec
 ### 1. User Stories (Required and Optional)
 
-**Required Must-have Stories**
+*Required Must-have Stories*
 
 - [x] User can login with id and firstname
 - [x] Used will be able to select a candidate he wants to vote
